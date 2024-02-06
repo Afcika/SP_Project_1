@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+      </div>
+      
+
+      <header class="header">
+        <div class="headerflex">
+
+            <div class="header_left">
+
+                <div class="header_left_img">
+                    <img src="https://preview.colorlib.com/theme/dorne/img/core-img/logo.png" alt="">
+                </div>
+
+                <div class="header_left_text">
+                    <span class="header_left_text_fill">Home</span>
+
+
+                   <label for="chk" id="chkk">
+                   <span class="header_awesome_left" tabindex="0">Explore <i class="fa fa-angle-down"></i></span>
+                   </label>
+                   <input  type="checkbox" id="chk">
+                   <div class="awesome_left_drop_1">
+                    <span>Home</span>
+                    <span>Explore</span>
+                    <span>Listing</span>
+                    <span>Single-Listing</span>
+                    <span>Contact</span>
+                    </div>
+                  
+                    <label for="chktwo" id="chkktwo">
+                    <span class="header_awesome_left" tabindex="0">Listings <i class="fa fa-angle-down" ></i></span>
+                    </label>
+                    <input type="checkbox" id="chktwo">
+                    <div class="awesome_left_drop_2">
+                        <span>Home</span>
+                        <span>Explore</span>
+                        <span>Listing</span>
+                        <span>Single-Listing</span>
+                        <span>Contact</span>
+                    </div>
+
+                    <span>Contact</span>
+
+                </div>
+
+            </div>
+            
+            <div class="burgerhide">
+                <label for="burger" id="burchk">
+                    <div class="burger">
+                        <span class="fa fa-bars"></span>
+                    </div>
+                </label>
+                    <input type="checkbox" id="burger">
+                
+                
+
+                <div class="burgershow">
+                    
+                    <span class="header_left_text_fill">Home</span>
+
+                    <label for="burgerexp" id="burgerexpp">
+                        <span class="burgerleft burgerhover">Explore <i class="fa fa-angle-down" ></i></span>
+                        </label>
+                        <input  type="checkbox" id="burgerexp">
+                        <div class="burgerexpdrop">
+                         <span>Home</span>  
+                         <span>Explore</span>
+                         <span>Listing</span>
+                         <span>Single-Listing</span>
+                         <span>Contact</span>
+                         </div>
+
+
+                         <label for="burgerexp2" id="burgerexp2p">
+                            <span class="burgerleft burgerhover">Listing <i class="fa fa-angle-down" ></i></span>
+                            </label>
+                            <input  type="checkbox" id="burgerexp2">
+                            <div class="burgerexpdrop2">
+                             <span>Home</span>  
+                             <span>Explore</span>
+                             <span>Listing</span>
+                             <span>Single-Listing</span>
+                             <span>Contact</span>
+                             </div>
+                             
+                    
+
+                    
+                    <span class="burgerhover">Contact</span>
+                    <span class="burgersearch"> <i class="fa fa-search" ></i>Search</span>
+                    <span>Sign in or Register</span>
+                    <button class="burgerbuttonpurp">+ Add Listings</button>
+                </div>
+
+            </div>
+
+
+            <div class="header_right">
+                <span class="header_awesome_right"> <i class="fa fa-search" ></i>Search</span>
+                <span>Sign in or Register</span>
+                <button>+ Add Listings</button>
+
+                
+            </div>
+
+
+        
+
+
+        </div>
+
+
+    </header> <!-- < header end -->
+
+
+
+
+
+
+
+   <section class="section_one">
+
+
+
+
+    <section class="one_middle">
+
+        <div class="one_middle_text">
+            <h1>Discover places near you</h1>
+            <h2>This is the best guide of your city</h2>
+        </div>
+
+        <div class="one_middle_conteiner">
+
+            <div class="conteiner_radio">
+                  <input type="radio" id="link1" name="links" checked>
+                 <label class="styled-radio" for="link1">Places</label>
+
+                 <input type="radio" id="link2" name="links">
+                 <label  class="styled-radio" for="link2">Events</label>
+            </div>
+
+            <div class="one_middle_serach">
+                <div class="one_middle_serach_flex">
+
+                    <div class="serach_flex_up">
+                        <h6>What are you looking for?</h6>
+                    </div>
+
+                    <div class="serach_flex_down">
+
+                        <form action="#" method="get">
+                            <select class="custom-select">
+                            <option selected="">Your Destinations</option>
+                            <option value="1">New York</option>
+                            <option value="2">Latvia</option>
+                            <option value="3">Dhaka</option>
+                            <option value="4">Melbourne</option>
+                            <option value="5">London</option>
+                            </select>
+
+                            <select class="custom-select">
+                            <option selected="">All Catagories</option>
+                            <option value="1">Catagories 1</option>
+                            <option value="2">Catagories 2</option>
+                            <option value="3">Catagories 3</option>
+                            </select>
+
+                            <select class="custom-select">
+                            <option selected="">Price Range</option>
+                            <option value="1">$100 - $499</option>
+                            <option value="2">$500 - $999</option>
+                            <option value="3">$1000 - $4999</option>
+                            </select>
+
+                            <button id="serach_flex_down_button" type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                        </form>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+   </section>
+
+
+   <section class="section_two">
+
+        <div class="section_two_cards">
+
+            <div 
+            data-aos="fade-up"     
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true" 
+            class="section_two_card">
+                <div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/core-img/icon-1.png.webp" alt="">
+                    <h6>Hotels</h6>
+                </div>
+            </div>
+
+            
+
+            <div class="section_two_card"
+            data-aos="fade-up"     
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="300"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"      
+            >
+
+                <div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/core-img/icon-2.png.webp" alt="">
+                    <h6>Restaurants</h6>
+                </div>
+            </div>
+
+
+            <div class="section_two_card"
+            data-aos="fade-up"     
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="600"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"   >
+                <div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/core-img/icon-3.png.webp" alt="">
+                    <h6>Shopping</h6>
+                </div>
+            </div>
+            <div class="section_two_card"
+            data-aos="fade-up"     
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="900"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"   >
+                <div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/core-img/icon-4.png.webp" alt="">
+                    <h6>Beauty & Spa</h6>
+                </div>
+            </div>
+            <div class="section_two_card section_two_card_long"
+            data-aos="fade-up"     
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="1200"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"   >
+                <div>            
+                    <img src="https://preview.colorlib.com/theme/dorne/img/core-img/icon-5.png.webp" alt="">
+                    <h6>Cinema</h6>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <h1>DISCOVER YOUR CITY WITH <br>  <span>DORNE</span></h1>
+            <h2>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce quis tempus elit. Sed efficitur tortor neque, vitae aliquet urna varius sit amet. Ut rhoncus, nunc nec tincidunt volutpat, ex libero.</h2>
+        </div>
+
+   </section>
+
+
+
+
+
+   <section class="section_three" id="section_two">
+
+
+    <div class="section_three_text">
+
+        <span></span>
+        <h2>CITIES YOU MUST SEE</h2>
+        <h3>Editor’s pick</h3>
+    </div>
+
+
+    <div class="section_three_cards">
+
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true"  
+
+             class="section_three_cards_left">
+
+            <div class="three_cards_left_flex">
+
+                <div class="three_cards_left_uptext">
+                    <a class="s3clu_city" href="">New York</a>
+                    <a class=" s3clu_city s3clu_address" href="">1643 Destinations</a>
+                </div>
+
+                <div class="three_cards_left_downtext">
+                    <a  class=" s3clu_city s3clu_plus" href="">+</a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    
+
+        <div  data-aos="fade-up" data-aos-delay="400" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true" class="section_three_cards_right">
+
+            <div class="s3c_right_up">
+
+                <div  class="three_cards_left_flex s3c_right_up_height">
+
+                    <div class="three_cards_left_uptext">
+                        <a class="s3clu_city " href="">Barcelona</a>
+                        <a class=" s3clu_city s3clu_address" href="">943 Destinations</a>
+                    </div>
+    
+                    <div class="three_cards_left_downtext">
+                        <a  class=" s3clu_city s3clu_plus" href="">+</a>
+    
+                    </div>
+                </div>
+
+            </div>
+
+            <div data-aos="fade-up"  data-aos-delay="600" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true"  class="s3c_right_up s3c_right_down">
+
+                <div class="three_cards_left_flex s3c_right_up_height">
+
+                    <div class="three_cards_left_uptext">
+                        <a class="s3clu_city " href="">PARIS</a>
+                        <a class=" s3clu_city s3clu_address" href="">243 Destinations</a>
+                    </div>
+    
+                    <div class="three_cards_left_downtext">
+                        <a  class=" s3clu_city s3clu_plus" href="">+</a>
+    
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            
+        </div>
+
+
+    </div>
+
+
+   </section>
+
+
+   <section class="section_four">
+
+        <div class="section_three_text section_four_text">
+
+            <span></span>
+            <h2>FEATURED DESTINATIONS</h2>
+            <h3>Editor’s pick</h3>
+        </div>
+
+
+
+
+        <div class="owl-carousel owl-theme section_four_cards">
+            <div class="section_four_cards_flex item">
+               
+
+                <div class="price-img">
+                    <div class="price-start">
+                        <p>FROM $59/night</p>
+                    </div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-1.jpg.webp" alt="">
+                </div>
+
+                <div class="section_four_cards_text">
+
+                    <div class="s4ct_left">
+                        <h5>Ibiza</h5>
+                        <h6>Party</h6>
+                    </div>
+
+                    <div class="s4ct_right">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="section_four_cards_flex item">
+                   
+    
+                    <div class="price-img">
+                         <div class="price-start">
+                        <p>FROM $59/night</p>
+                    </div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-2.jpg.webp" alt="">
+                    </div>
+    
+                    <div class="section_four_cards_text">
+    
+                        <div class="s4ct_left">
+                            <h5>Paris</h5>
+                            <h6>Luxury</h6>
+                        </div>
+    
+                        <div class="s4ct_right">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+    
+    
+                  </div>
+                  </div>
+
+            <div class="section_four_cards_flex item">
+                   
+    
+                    <div class="price-img">
+                         <div class="price-start">
+                        <p>FROM $59/night</p>
+                    </div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-3.jpg.webp" alt="">
+                    </div>
+    
+                    <div class="section_four_cards_text">
+    
+                        <div class="s4ct_left">
+                            <h5>Lake Como</h5>
+                            <h6>Spectacular</h6>
+                        </div>
+    
+                        <div class="s4ct_right">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+    
+                    </div>
+            </div>
+            <div class="section_four_cards_flex item">
+                   
+    
+                    <div class="price-img">
+                         <div class="price-start">
+                        <p>FROM $59/night</p>
+                    </div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-4.jpg.webp" alt="">
+                    </div>
+    
+                    <div class="section_four_cards_text">
+    
+                        <div class="s4ct_left">
+                            <h5>Greece</h5>
+                            <h6>Sunny</h6>
+                        </div>
+    
+                        <div class="s4ct_right">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+    
+                    </div>
+            </div>
+            <div class="section_four_cards_flex item">
+                   
+    
+                    <div class="price-img">
+                         <div class="price-start">
+                        <p>FROM $59/night</p>
+                    </div>
+                    <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-5.jpg" alt="">
+                    </div>
+    
+                    <div class="section_four_cards_text">
+    
+                        <div class="s4ct_left">
+                            <h5>Norway</h5>
+                            <h6>All Year round</h6>
+                        </div>
+    
+                        <div class="s4ct_right">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+    
+                    </div>
+            </div>
+                    
+            </div>
+            
+        </div>
+
+
+
+
+   </section>
+    
+
+   
+   <section class="section_four section_five">
+
+    <div class="section_three_text section_four_text section_five_text">
+
+        <span></span>
+        <h2>FEATURED DESTINATIONS</h2>
+        <h3>Editor’s pick</h3>
+    </div>
+
+
+
+
+    <div class=" owl-carousel owl-theme section_four_cards">
+        <div class="section_four_cards_flex item">
+            <div class="price-start-reviev">
+                <a class="price-start-reviev_a_purp" href="">8.5</a>
+                <a class="price-start-reviev_a_black" href=""><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+            </div>
+
+            <div class="price-img">
+                <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-6.jpg.webp" alt="">
+            </div>
+
+            <div class="section_four_cards_text">
+
+                <div class="s4ct_left">
+                    <h5>Martha’s bar</h5>
+                    <h6>Manhathan</h6>
+                </div>
+
+                <div class="s4ct_right">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+             </div>
+        </div>
+
+        <div class="section_four_cards_flex item">
+            <div class="price-start-reviev">
+                <a class="price-start-reviev_a_purp" href="">9.5</a>
+                <a class="price-start-reviev_a_black" href=""><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+            </div>
+
+                <div class="price-img">
+                <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-7.jpg.webp" alt="">
+                </div>
+
+                <div class="section_four_cards_text">
+
+                    <div class="s4ct_left">
+                        <h5>Delux Restaurant</h5>
+                        <h6>Paris</h6>
+                    </div>
+
+                    <div class="s4ct_right">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+
+
+              </div>
+              </div>
+
+        <div class="section_four_cards_flex item">
+            <div class="price-start-reviev">
+                <a class="price-start-reviev_a_purp" href="">8.2</a>
+                <a class="price-start-reviev_a_black" href=""><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+            </div>
+
+                <div class="price-img">
+                <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-8.jpg.webp" alt="">
+                </div>
+
+                <div class="section_four_cards_text">
+
+                    <div class="s4ct_left">
+                        <h5>Jim’s corner Pub</h5>
+                        <h6>Madrid</h6>
+                    </div>
+
+                    <div class="s4ct_right">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+        </div>
+        <div class="section_four_cards_flex item">
+            <div class="price-start-reviev">
+                <a class="price-start-reviev_a_purp" href="">8.7</a>
+                <a class="price-start-reviev_a_black" href=""><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+            </div>
+
+                <div class="price-img">
+                <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-9.jpg.webp" alt="">
+                </div>
+
+                <div class="section_four_cards_text">
+
+                    <div class="s4ct_left">
+                        <h5>tower Risto bar</h5>
+                        <h6>Madrid</h6>
+                    </div>
+
+                    <div class="s4ct_right">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+        </div>
+        <div class="section_four_cards_flex item">
+                <div class="price-start-reviev">
+                    <a class="price-start-reviev_a_purp" href="">9.8</a>
+                    <a class="price-start-reviev_a_black" href=""><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+                </div>
+
+                <div class="price-img">
+                <img src="https://preview.colorlib.com/theme/dorne/img/bg-img/feature-10.jpg.webp" alt="">
+                </div>
+
+                <div class="section_four_cards_text">
+
+                    <div class="s4ct_left">
+                        <h5>Pizzeria venezia</h5>
+                        <h6>Hong Kong</h6>
+                    </div>
+
+                    <div class="s4ct_right">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+        </div>
+                
+        </div>
+        
+    </div>
+
+</section>
+
+
+
+<section class="section_six">
+
+    <div class="section_three_text section_four_text section_five_text">
+
+        <span></span>
+        <h2>FEATURED EVENTS</h2>
+        <h3>Editor’s pick</h3>
+    </div>
+
+
+    <div class="section_six_card_flex">
+        <div class="section_six_crad"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true">
+          
+          <div class="section_six_crad_back">
+            <div class="section_six_crad_left">
+                <div class="sscl_miniicons">
+                    <div class="sscl_miniicons_tpp" >
+                      <a class="sscl_miniicons_1" href="#">26 Nov</a>
+                        <a class=" sscl_miniicons_1 sscl_miniicons_2" href="#"><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+                    </div>
+                </div>
+        
+        
+                <img class="ssc_maiimg" src="https://preview.colorlib.com/theme/dorne/img/bg-img/event-1.jpg.webp" alt="">
+        
+            </div>
+            <div class="section_six_crad_right">
+                <div class="section_six_crad_right_text">
+        
+                    <h5>Jazz Concert</h5>
+                    <h6>Manhathan</h6>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                 </div>
+            </div>
+            <div class="six_crad_right_blackbutton">
+                <a href="#">+</a>
+             </div>
+
+
+           </div>
+        </div>
+        <div class="section_six_crad" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true">
+            
+            <div class="section_six_crad_back">
+                <div class="section_six_crad_left">
+                    <div class="sscl_miniicons">
+                        <div class="sscl_miniicons_tpp">
+                        <a class="sscl_miniicons_1" href="#">26 Nov</a>
+                            <a class=" sscl_miniicons_1 sscl_miniicons_2" href="#"><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+                        </div>
+                    </div>
+            
+            
+                    <img class="ssc_maiimg" src="https://preview.colorlib.com/theme/dorne/img/bg-img/event-2.jpg" alt="">
+            
+                </div>
+                <div class="section_six_crad_right">
+                    <div class="section_six_crad_right_text">
+            
+                        <h5>DEEJAY IN THE HOUSE</h5>
+                        <h6>Manhathan</h6>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                    </div>
+                </div>
+                <div class="six_crad_right_blackbutton">
+                    <a href="#">+</a>
+                </div>
+            </div>
+        </div>
+        <div class="section_six_crad" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true">
+            <div class="section_six_crad_back">
+                <div class="section_six_crad_left">
+                    <div class="sscl_miniicons">
+                        <div class="sscl_miniicons_tpp"  >
+                        <a class="sscl_miniicons_1" href="#">26 Nov</a>
+                            <a class=" sscl_miniicons_1 sscl_miniicons_2" href="#"><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+                        </div>
+                    </div>
+            
+            
+                    <img class="ssc_maiimg" src="https://preview.colorlib.com/theme/dorne/img/bg-img/event-3.jpg" alt="">
+            
+                </div>
+                <div class="section_six_crad_right">
+                    <div class="section_six_crad_right_text">
+            
+                        <h5>THEATRE NIGHT OUTSIDE</h5>
+                        <h6>Manhathan</h6>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                    </div>
+                </div>
+                <div class="six_crad_right_blackbutton">
+                    <a href="#">+</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="section_six_crad" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true">
+            <div class="section_six_crad_back">
+                <div class="section_six_crad_left">
+                    <div class="sscl_miniicons">
+                        <div class="sscl_miniicons_tpp"  >
+                        <a class="sscl_miniicons_1" href="#">26 Nov</a>
+                            <a class=" sscl_miniicons_1 sscl_miniicons_2" href="#"><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+                        </div>
+                    </div>
+            
+            
+                    <img class="ssc_maiimg" src="https://preview.colorlib.com/theme/dorne/img/bg-img/event-4.jpg" alt="">
+            
+                </div>
+                <div class="section_six_crad_right">
+                    <div class="section_six_crad_right_text">
+            
+                        <h5>WINE TASTING</h5>
+                        <h6>Manhathan</h6>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                    </div>
+                </div>
+                <div class="six_crad_right_blackbutton">
+                    <a href="#">+</a>
+                </div>
+            </div>
+        </div>
+        <div class="section_six_crad" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true">
+            <div class="section_six_crad_back">
+                <div class="section_six_crad_left">
+                    <div class="sscl_miniicons">
+                        <div class="sscl_miniicons_tpp" >
+                        <a class="sscl_miniicons_1" href="#">26 Nov</a>
+                            <a class=" sscl_miniicons_1 sscl_miniicons_2" href="#"><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+                        </div>
+                    </div>
+            
+            
+                    <img class="ssc_maiimg" src="https://preview.colorlib.com/theme/dorne/img/bg-img/event-5.jpg" alt="">
+            
+                </div>
+                <div class="section_six_crad_right">
+                    <div class="section_six_crad_right_text">
+            
+                        <h5>NEW MOON PARTY</h5>
+                        <h6>Manhathan</h6>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                    </div>
+                </div>
+                <div class="six_crad_right_blackbutton">
+                    <a href="#">+</a>
+                </div>
+            </div>
+        </div>
+        <div class="section_six_crad" data-aos="fade-up" data-aos-delay="600" data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="true">
+            <div class="section_six_crad_back">
+                <div class="section_six_crad_left">
+                    <div class="sscl_miniicons">
+                        <div class="sscl_miniicons_tpp" >
+                        <a class="sscl_miniicons_1" href="#">26 Nov</a>
+                            <a class=" sscl_miniicons_1 sscl_miniicons_2" href="#"><img src="https://preview.colorlib.com/theme/dorne/img/core-img/map.png.webp" alt=""></a>
+                        </div>
+                    </div>
+            
+            
+                    <img class="ssc_maiimg" src="https://preview.colorlib.com/theme/dorne/img/bg-img/event-6.jpg" alt="">
+            
+                </div>
+                <div class="section_six_crad_right">
+                    <div class="section_six_crad_right_text">
+            
+                        <h5>HAPPY HOUR AT PUB</h5>
+                        <h6>Manhathan</h6>
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra...</p>
+                    </div>
+                </div>
+                <div class="six_crad_right_blackbutton">
+                    <a href="#">+</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</section>
+
+
+<section class="section_sev">
+
+
+    <img src="https://preview.colorlib.com/theme/dorne/img/clients-img/1.png" alt="">
+    <img src="https://preview.colorlib.com/theme/dorne/img/clients-img/2.png" alt="">
+    <img src="https://preview.colorlib.com/theme/dorne/img/clients-img/3.png" alt="">
+    <img src="https://preview.colorlib.com/theme/dorne/img/clients-img/4.png" alt="">
+    <img src="https://preview.colorlib.com/theme/dorne/img/clients-img/5.png" alt="">
+
+</section>
+
+
+<footer>
+
+    <div>     
+       <p> Copyright ©2024 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by  <a href="#">Colorlib</a></p>
+    </div>
+      
+
+       <div class="footerincon">
+       <a href="#"><i class="fa fa-linkedin" aria-haspopup="true"></i></a>
+       <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+       <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+       <a href="#"><i class="fa fa-twitter" aria-haspopup="true"></i></a>
+       <a href="#"><i class="fa fa-facebook" aria-haspopup="true"></i></a>
+
+        </div>
+
+</footer>
+
+
+
+
+<script>
+    window.addEventListener('scroll', function() {
+      var header = document.querySelector('.header');
+      var burgershow = document.querySelector('.burgershow');
+      var leftdrop = document.querySelector('.awesome_left_drop_1');
+      var leftdroptwo = document.querySelector('.awesome_left_drop_2');
+      var scrollPosition = window.scrollY;
+  
+      if (scrollPosition > 0) {
+        header.classList.add('scroll');
+        burgershow.classList.add('sticky');
+        leftdrop.classList.add('drop');
+        leftdroptwo.classList.add('drop');
+      } else {
+        header.classList.remove('scroll');
+        burgershow.classList.remove('sticky');
+        leftdrop.classList.remove('drop');
+        leftdroptwo.classList.remove('drop');
+      }
+    });
+  </script>
+  
+
+
+<script>  
+    window.addEventListener('load', function () {  
+      document.body.classList.add('loading');   
+      setTimeout(function () {    
+        document.body.classList.remove('loading');
+        document.body.classList.add('content-loaded');      
+        window.scrollTo(0, 0); 
+        document.body.style.overflow = 'auto';
+      }, 500); 
+    });
+  </script>
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+
+<script>
+$('.owl-carousel').owlCarousel({
+  items: 5, // Set the number of items you have in the carousel
+  loop: true,
+  dots:false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+
+    980: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+    1350: {
+      items: 3, // Set the number of items to be visible at or below 1342px
+    },
+    1351:{
+      items: 5, // Adjust this according to your needs
+    },
+  },
+});
+</script>
+  
+</body>
+</html>
